@@ -13,6 +13,9 @@ const createTuit = (req, res) => {
   newTuit._id = (new Date()).getTime()+'';
   newTuit.likes = 0;
   newTuit.liked = false;
+  newTuit.image = 'spacex.png' // need update pass all other tuit value to json
+  newTuit.dislikes = 0;
+  newTuit.disliked = false;
   tuits.push(newTuit);
   res.json(newTuit);
 }
